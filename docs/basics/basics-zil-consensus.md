@@ -16,4 +16,4 @@ Broadly, each shard runs an algorithm called [practical Byzantine fault toleranc
 
 1. Pre-prepare: the `leader` announces the state of the blockchain it has to all `backup` nodes in the shard as a **pre-prepare** message.
 2. Prepare: each node receives and validates the state received from the `leader` in the pre-prepare phase, and multicasts its decision as a **prepare** message to the rest of the nodes in the shard.
-3. Commit: upon receiving a valid **prepare** message from a super majority (2/3) of nodes, it multicasts a **commit** message to all other nodes. Once a **commit** message is recieved from a super majority, the node records the new state.
+3. Commit: upon receiving a valid **prepare** message from a super majority (2/3) of nodes, it multicasts a **commit** message to all other nodes. Once a **commit** message is received from a super majority, the node records the new state.
